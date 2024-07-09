@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000d4;
+  border-radius: 10px;
+}
+
+body {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("images/meric-dagli-slapbg2mejw-unsplash.jpg");
+  background-size: cover;
+  background-position: top;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin: 2% 0% 2% 2%;
+  gap: 20px;
+}
+
+/*header*/
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  color: #001c3a;
+  height: 12vh;
+  width: 100vw;
+}
+
+.logotipe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.globe {
+  width: 38px;
+  height: 38px;
+}
+
+.logo-title {
+  font-size: 36px;
+  margin-left: 15px;
+  font-family: "Merriweather", serif;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 34px;
+  height: 4px;
+  background-color: #001c3a;
+  margin: 6px;
+  border-radius: 10px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  margin-right: 1%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  list-style: none;
+  color: #001c3a;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Cabin", sans-serif;
+  padding: 10px;
+}
+
+a:hover {
+  text-decoration: underline;
+  transition: all ease-in 0.1s;
+}
+
+a:not(:hover) {
+  text-decoration: none;
+  transition: all ease-out 0.1s;
+}
+/*Fim do header*/
+
+/*main*/
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+#sobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-bottom: 4%;
+  gap: 20px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 50px;
+  font-family: "PT Serif", serif;
+  line-height: 110%;
+  max-width: 95vw;
+}
+
+b {
+  text-decoration: none;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+}
+
+#topicals {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ffffffdd;
+  height: auto;
+  padding: 20px;
+}
+
+.div-aside {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+aside img {
+  width: 40%;
+}
+
+aside h1 {
+  font-size: 28px;
+  width: 80%;
+  text-align: center;
+  font-family: "Cabin", sans-serif;
+  font-weight: 600;
+  color: #000;
+}
+
+[anime-data] {
+  transition: 1.8s ease-in-out;
+}
+
+[anime-data = "left"] {
+  transform: translateX(-100vw);
+  opacity: 0;
+} 
+
+[anime-data = "right"] {
+  transform: translateX(200vw);
+  opacity: 0;
+} 
+
+[anime-data].animate {
+  opacity: 1;
+  transform: translateX(0vw);
+}
+
+.line {
+  width: 100%;
+  height: 5px;
+  background-color: #fff;
+  margin: 1% 0 1% 0;
+}
+
+h2 {
+  color: #fff;
+  font-size: 20px;
+  font-family: "Cabin", sans-serif;
+  max-width: 99vw;
+}
+
+span::after {
+  content: '|';
+  margin-left: 5px;
+  opacity: 1;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+h4 {
+  color: #fff;
+  max-width: 90%;
+  font-size: 20px;
+  font-family: "Cabin", sans-serif;
+  text-align: justify;
+}
+
+footer {
+  background-color: #00000083;
+  border-top: 2px solid #fff;
+  height: 100%;
+}
+
+.simbols {
+  width: 40px;
+}
+
+.div-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (max-width: 1000px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  ul {
+    position: absolute;
+    top: 11.5vh;
+    right: 0;
+    width: 50vw;
+    height: 90vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    opacity: 0; /* Mudança para melhor visualização */
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  ul.active {
+    transform: translateX(0);
+    opacity: 1;
+    margin-right: 0;
+  }
+
+  .mobile-menu {
+    display: block;
+    margin-right: 2%;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 820px) {
+  .div-aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+
+  aside img {
+    width: 50%;
+  }
+
+  aside {
+    gap: 0;
+  }
+
+  .topical-h1 {
+    font-size: 26px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo-title {
+    font-size: 30px;
+  }
+
+  .globe {
+    width: 28px;
+    height: 28px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 17px;
+  }
+
+  .mobile-menu div {
+    width: 30px;
+    height: 4px;
+  }
+}
+
+@media (max-width: 430px) {
+  
+  aside img {
+    width: 65%;
+  }
+
+  aside {
+    gap: 0;
+  }
+
+  .topical-h1 {
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  .div-aside {
+    gap: 20px;
+  }
+
+  .contact-us {
+    font-size: 26px;
+  }
+
+  .simbols {
+    width: 35px;
+  }
+
+  a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 330px) {
+  .logo-title {
+    font-size: 22px;
+  }
+
+  .globe {
+    width: 22px;
+    height: 22px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .mobile-menu div {
+    width: 24px;
+    height: 4px;
+    margin: 4px;
+  }
+
+  a {
+    font-size: 16px;
+  }
+}
