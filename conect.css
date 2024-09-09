@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000d4;
+  border-radius: 10px;
+}
+
+body {
+  background-color: #b8b8b85c;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 70px;
+  width: 100vw;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.profile-container {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-icon {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: #efefef;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  min-width: 150px;
+  border-radius: 5px;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+}
+
+.dropdown-menu a:hover {
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.profile-container:hover .dropdown-menu {
+  display: block;
+}
+
+input {
+  font-family: "Cabin", sans-serif;
+  font-size: 20px;
+  color: #000e1d;
+}
+
+a img {
+  width: 40px;
+}
+
+a img:hover {
+  padding-bottom: 5px;
+  border-bottom: 3px solid #000e1d;
+  transition: 0.1s ease-in;
+}
+
+a img:not(:hover) {
+  transition: 0.1s ease-in;
+}
+
+.logotipe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.logotitle {
+  font-size: 36px;
+  font-family: "Merriweather", serif;
+  color: #000e1d;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  border-bottom: 2.5px solid #000e1d;
+  padding: 10px;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 100vw;
+    height: 100%;
+    padding-top: 3%;
+    background: rgb(0,14,29);
+    background: linear-gradient(90deg, rgb(0, 11, 22) 0%, rgba(0,120,144,1) 100%);
+    background-size: 200% 200%;
+    animation: animateBackground 4s ease-in-out infinite alternate;
+}
+
+@keyframes animateBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+.title {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 0 5%;
+}
+
+.title h1 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 50px;
+    color: #fff;
+}
+
+.title h2 {
+    max-width: 80%;
+    word-break: keep-all;
+    color: #fff;
+}
+
+#info-int {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.div-int {
+    width: 30%;
+    height: 340px;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.div-int h4 {
+    color: #fff;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+}
+
+.div-int:nth-child(1) {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(7, 60px);
+    grid-gap: 8px;
+    background: none;
+    outline: none;
+}
+
+.day {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 4px solid #000e1d;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.day:hover {
+    background: none;
+    transform: scale(1.1);
+    color: #fff;
+}
+
+.day.selected {
+    background-color: #000e1d;
+    color: white;
+    border: 3px solid #fff; 
+}
+
+.div-int:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    outline: none;
+    padding: 0;
+    background: none;
+    gap: 20px;
+}
+
+.two-int {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    border-radius: 30px;
+    outline: #fff 3.7px solid;
+    outline-offset: -8px;
+    height: 42%;
+    width: 100%;
+    padding-left: 25px;
+}
+
+.two-int:nth-child(1) {
+    width: 82%;
+}
+
+span {
+    font-weight: 900;
+    letter-spacing: -2.2px
+}
+
+.two-int h1:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease;
+  cursor:context-menu;
+}
+
+.two-int h1:not(:hover) {
+  transition: 0.2s ease;
+}
+
+.two-int h1 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: #fff;
+}
+
+.two-int h2 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    max-width: 94%;
+    color: #fff;
+}
+
+.two-int:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.two-int:nth-child(2) div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.two-int:nth-child(2) img {
+    width: 50%;
+}
+
+.two-int:nth-child(2) img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.two-int:nth-child(2) img:not(:hover) {
+    transform: scale(1);
+    transition: 0.2s ease;
+}
+
+.chart-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    width: 100% !important;
+    height: 100% !important;
+    cursor: pointer;
+}

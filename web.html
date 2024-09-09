@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorldBusiness</title>
+    <link rel="stylesheet" href="app.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+    </style>
+    <link rel="shortcut icon" href="images/globe.png" type="image/x-icon">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logotipe">
+                <h1 class="logotitle">WorldBsn</h1>
+                <img style="width: 40px;" src="images/globe.png" alt="logotipo">
+                <input type="text" class="search-input" placeholder="Search">
+            </div>
+            <a href="web.html"><img src="images/casa.png" alt="home"></a>
+            <a href="conexion.html"><img src="images/desenvolvimento-pessoal.png" alt="web"></a>
+            <a href="work.html"><img src="images/bolsa.png" alt="bag"></a>
+            <a href="chat.html"><img src="images/comente (1).png" alt="chat"></a>
+            <div class="profile-container">
+                <a class="profile-icon" href=""><img src="images/perfil.png" alt="perfil"></a>
+                <div class="dropdown-menu">
+                    <a href="">Profile</a><a href="">Settings</a><a href="">Logout</a>
+                </div>
+            </div>
+            <a href="flowMix.html"><img src="images/cubos-de-acucar.png" alt="more"></a>
+        </nav>
+    </header>
+    <main>
+        <section id="sectmain">
+            <div id="top-info">
+                <aside class="aside-top-info" style="border: none;">
+                    <div class="feed-id">
+                        <img src="images/perfil.png" alt="perfil">
+                        <h2>Eduardo Lopes</h2>
+                    </div>
+                    <div class="line-info"></div>
+                    <div class="conect-info">
+                        <div class="div-text-info">
+                           <a href="conexion.html"><h3>Connections</h3></a>
+                            <h4>Check your connections</h4>
+                        </div>
+                        <img src="images/cubos-de-acucar.png">
+                    </div>
+                    <div class="line-info"></div>
+                    <div class="div-adition" style="background-color: #fff; padding-bottom: 5px;">
+                        <div class="div-text-info" style="gap: 10px;">
+                            <a href="#">Groups</a>
+                            <a href="flowMix.html">Events</a>
+                        </div>
+                        <img src="images/icone-de-adicao.png" alt="adition">
+                    </div>
+                    <div class="line-info"></div>
+                </aside>
+                <section id="postate">
+                    <div class="publicate">
+                        <img style="width: 65px;" src="images/perfil.png" alt="perfil">
+                        <input class="text-post" type="text" placeholder="Invest, chat and publish here!">
+                    </div>
+                    <div class="publicate">
+                        <img class="obj-img-publi" src="images/photo.png" alt="galery">
+                        <img class="obj-img-publi" src="images/calendar.png" alt="calendar" style="padding-bottom: 5px;">
+                        <img class="obj-img-publi" src="images/graph.png" alt="graph">
+                    </div>
+                </section>
+                <aside class="aside-top-info" style="border: none; background: #fff; height: 400%; display: flex; justify-content: space-evenly;">
+                    <div class="title-news">
+                        <h1 class="news-info-h1">WorldBsn News</h1>
+                        <h2 class="news-info-h2">Hot projects</h2>
+                    </div>
+                    <div class="line-info"></div>
+                    <div class="div-btn-news">
+                        <h5>Lorem ipsum dolor.</h5>
+                        <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque adipisci quisquam perspiciatis.</h6>
+                    </div>
+                    <div class="div-btn-news">
+                        <h5>Lorem ipsum dolor.</h5>
+                        <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque adipisci quisquam perspiciatis.</h6>
+                    </div>
+                    <div class="div-btn-news">
+                        <h5>Lorem ipsum dolor.</h5>
+                        <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque adipisci quisquam perspiciatis.</h6>
+                    </div>
+                    <div class="div-btn-news">
+                        <h5>Lorem ipsum dolor.</h5>
+                        <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque adipisci quisquam perspiciatis.</h6>
+                    </div>
+                        <div class="div-btn-news">
+                            <h5>Lorem ipsum dolor.</h5>
+                            <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque adipisci quisquam perspiciatis.</h6>
+                        </div>
+                </aside>
+            </div>
+                <div class="divisore">
+                    <div class="divide"></div>
+                    <h4>Posts</h4>
+                </div>
+                <section id="content">
+                    <div class="top-publi">
+                        <img src="images/github.png" alt="logotipe">
+                        <div class="profile-post">
+                            <h2>GitHub</h2>
+                            <img style="width: 35px; height: 35px; margin-top: 5px;" src="images/verificar.png" alt="selo">
+                        </div>
+                        <h4>Code Hosting and Development Company</h4>
+                    </div>
+                    <div class="main-publi">
+                    </div>
+                </section>
+                <article>
+                    <aside>
+                        <div>
+                            <img src="images/perfil.png" alt="perfil">
+                            <h4 style="font-size: 24px; font-weight: 800;">Jhon Maxwel</h4>
+                        </div>
+                        <div style="background-color: #000e1d; padding: 7px 0 7px 0; max-height: 100%;">
+                            <h4 style="font-size: 18px; color: #fff;">I'm working on a project with GitHub, increasing
+                                hosting
+                                performance and bringing more security to users. All this thanks to WorldBsn's visibility.
+                            </h4>
+                        </div>
+                    </aside>
+                    <aside class="chart-container" style="width: 65%;">
+                        <canvas id="myChart"></canvas>
+                    </aside>
+                </article>
+                <section id="content" style="margin-top: 5%;">
+                    <div class="top-publi">
+                        <div class="profile-post" style="gap: 5px;">
+                            <img src="images/samsung.png" alt="logotipe"
+                            style="width: 220px; margin-top: 5px; margin-bottom: 7px;">
+                            <img style="width: 35px; height: 35px;" src="images/verificar.png" alt="selo">
+                        </div>
+                        <h4>Global Technology and Electronics Manufacturer.</h4>
+                    </div>
+                    <div class="main-publi"
+                    style="background: url(images/galaxy.png); background-position: bottom; background-size: cover;">
+                </div>
+            </section>
+            <article>
+                <aside>
+                    <div>
+                            <img src="images/profile (1).png" alt="perfil">
+                            <h4 style="font-size: 24px; font-weight: 800;">David Lune</h4>
+                        </div>
+                        <div style="background-color: #161616; padding: 7px 0 7px 0; max-height: 100%;">
+                            <h4 style="font-size: 17px; color: #fff;">I'm working at Samsung to improve A.I. with software I
+                                created. Thanks to WorldBsn's I received recognition for my software and was able to join
+                                the Samsung team.</h4>
+                            </div>
+                        </aside>
+                        <aside class="description" style="width: 65%; background-color: #161616;">
+                            <h2 style="color: #ffffff;">Coming soon...</h2>
+                        </aside>
+                    </article>
+                    <section id="content" style="margin-top: 5%;">
+                        <div class="top-publi">
+                            <img src="images/bridgestone.png" alt="logotipe"">
+                            <div class=" profile-post" style="gap: 5px;">
+                                <h2>Bridgestone</h2>
+                                <img style="width: 35px; height: 35px;" src="images/verificar.png" alt="selo">
+                            </div>
+                            <h4>Global Tire Manufacturer.</h4>
+                        </div>
+                        <div class="main-publi"
+                        style="background: url(images/formula1.png); background-position: center; background-size: cover;">
+                    </div>
+                </section>
+                <article>
+                    <aside>
+                        <div>
+                            <img src="images/profile.png" alt="perfil">
+                            <h4 style="font-size: 24px; font-weight: 800;">Carol B. Silva</h4>
+                        </div>
+                        <div
+                        style="background-color: #db0b00; padding: 7px 0 7px 0; max-height: 100%; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+                        <h4 style="font-size: 16px; color: #fff;">
+                            I was able to join Bridgestone and innovate the way
+                            tires are disposed of. With WorldBsn's my future in helping the planet became recognized and
+                            more important.</h4>
+                        </div>
+                    </aside>
+                    <aside class="description" style="width: 65%; background-color: #db0b00;">
+                        <h2 style="color: #ffffff;">Coming soon...</h2>
+                    </aside>
+                </article>
+                <section id="content" style="margin-top: 5%;">
+                    <div class="top-publi">
+                        <img src="images/unilever.png" alt="logotipe" style="width: 100px; margin-top: 5px;">
+                        <div class="profile-post" style="gap: 5px;">
+                            <h2>Unilever</h2>
+                            <img style="width: 35px; height: 35px;" src="images/verificar.png" alt="selo">
+                        </div>
+                        <h4>Consumer Goods Multinational Corporation.</h4>
+                    </div>
+                    <div class="main-publi"
+                    style="background: url(images/maxresdefault.png); background-position: center; background-size: cover;">
+                </div>
+            </section>
+            <article>
+                <aside>
+                    <div>
+                        <img src="images/profile.png" alt="perfil">
+                        <h4 style="font-size: 24px; font-weight: 800;">Sarah Malws</h4>
+                    </div>
+                    <div style="background-color: #E70068; padding: 7px 0 7px 0; max-height: 100%;">
+                        <h4 style="font-size: 15px; color: #fff;">WorldBsn's gave me a huge door to join Unilever. Today
+                            I give lectures and show how the homemade product I created shows in a practical and quick
+                            way if any food contains pesticides that are harmful to health.</h4>
+                        </div>
+                    </aside>
+                    <aside class="description" style="width: 65%; background-color: #E70068;">
+                        <h2 style="color: #ffffff;">Coming soon...</h2>
+                    </aside>
+                </article>
+                <section id="content" style="margin-top: 5%;">
+                    <div class="top-publi">
+                        <div class="profile-post" style="gap: 5px;">
+                            <img src="images/intel.png" alt="logotipe" style="width: 130px; margin-top: 5px;">
+                            <img style="width: 35px; height: 35px; margin-top: 10px;" src="images/verificar.png" alt="selo">
+                        </div>
+                        <h4>Leader in Manufacturing Innovative Microprocessors.</h4>
+                    </div>
+                    <div class="main-publi"
+                    style="background: url(images/processador-intel-core-13-geracao-edited.png); background-position: center; background-size: cover;">
+                </div>
+            </section>
+            <article style="margin-bottom: 20px;">
+                <aside>
+                    <div>
+                        <img src="images/perfil.png" alt="perfil">
+                        <h4 style="font-size: 24px; font-weight: 800;">Eduardo L. B.</h4>
+                    </div>
+                    <div style="background-color: #2129A6; padding: 7px 0 7px 0; max-height: 100%;">
+                        <h4 style="font-size: 16.4px; color: #fff;">WorldBsn's I can lead an Intel team within
+                            the enormous technology that the company offers. Now I can optimize the time and performance
+                            of a processor thanks to my devices.</h4>
+                        </div>
+                    </aside>
+                    <aside class="description" style="width: 65%; background-color: #2129A6;">
+                        <h2 style="color: #ffffff;">Coming soon...</h2>
+                    </aside>
+                </article>
+            </section>
+            </main>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var meuGraficoPizza = new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: ['Accessibility', 'Design', 'Terminal Modification', 'Responsiveness', 'Debugs', 'Aprimorate'],
+                    datasets: [{
+                        label: 'Amount of hours',
+                        data: [300, 80, 100, 80, 120, 90],
+                        backgroundColor: [
+                            'rgb(0, 14, 29)',
+                            'rgb(46, 38, 119)',
+                            'rgba(25, 45, 65, 0.729)',
+                            'rgba(0, 18, 99, 0.586)',
+                            'rgba(47, 206, 206, 0.318)',
+                            'rgba(255, 255, 255, 0.351)'
+                        ],
+                        borderColor: [
+                            'rgb(0, 14, 29)'
+                        ],
+                        borderWidth: 3
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'left',
+                            labels: {
+                                font: {
+                                    size: 18,
+                                    weight: 'bold',
+                                    family: 'Cabin',
+                                    style: 'normal',
+                                },
+                                color: 'black'
+                            }
+                        },
+                        tooltip: {
+                            enabled: true
+                        },
+                        datalabels: {
+                            formatter: (value, context) => {
+                                let sum = context.chart._metasets[0].total;
+                                let percentage = (value / sum * 100).toFixed(2) + "%";
+                                return percentage;
+                            },
+                            color: (context) => {
+                                return [0, 1, 2].includes(context.dataIndex) ? '#fff' : '#000';
+                            },
+                            anchor: 'center',
+                            align: 'end',
+                            offset: 0,
+                            font: {
+                                size: 15,
+                                weight: 'bold',
+                                family: 'Cabin',
+                                style: 'normal'
+                            }
+                        }
+                    }
+                },
+                plugins: [ChartDataLabels]
+            });
+        });
+    </script>
+</body>

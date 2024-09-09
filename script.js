@@ -1,3 +1,5 @@
+document.body.style.overflowX = "hidden";
+
 function typeWrite(element) {
     const textArray = element.innerHTML.split('');
     element.innerHTML = '';
@@ -73,7 +75,7 @@ const target = document.querySelectorAll('[anime-data]');
 const animationClass = 'animate';
 
 function animeScroll() {
-    const windowTop = window.scrollY + ((window.innerHeight * 3) / 4.5);
+    const windowTop = window.scrollY + ((window.innerHeight * 3) / 4.2);
     target.forEach(function(element) {
         if((windowTop) > element.offsetTop) {
             element.classList.add(animationClass);
@@ -93,3 +95,37 @@ window.addEventListener('scroll', function() {
     console.log('blabla');
 })
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    const profileIcon = document.querySelector(".profile-icon");
+    const dropdownMenu = document.querySelector(".dropdown-menu");
+    let timeout;
+
+    function showDropdown() {
+        clearTimeout(timeout);
+        dropdownMenu.style.display = "block";
+    }
+
+    function hideDropdown() {
+        timeout = setTimeout(() => {
+            dropdownMenu.style.display = "none";
+        }, 1000);
+    }
+
+    profileIcon.addEventListener("mouseenter", showDropdown);
+    profileIcon.addEventListener("mouseleave", hideDropdown);
+    dropdownMenu.addEventListener("mouseenter", showDropdown);
+    dropdownMenu.addEventListener("mouseleave", hideDropdown);
+});
+
+document.querySelectorAll('.day').forEach(day => {
+    day.addEventListener('click', function() {
+        if (this.classList.contains('selected')) {
+            this.classList.remove('selected');
+        } else {
+            document.querySelectorAll('.day').forEach(d => d.classList.remove('selected'));
+
+            this.classList.add('selected');
+        }
+    });
+});

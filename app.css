@@ -1,0 +1,509 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000d4;
+  border-radius: 10px;
+}
+
+body {
+  background-color: #b8b8b85c;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+    background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 70px;
+  width: 100vw;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.profile-container {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-icon {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: #efefef;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  min-width: 150px;
+  border-radius: 5px;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+}
+
+.dropdown-menu a:hover {
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.profile-container:hover .dropdown-menu {
+  display: block;
+}
+
+input {
+    font-family: "Cabin", sans-serif;
+    font-size: 20px;
+    color: #000e1d;
+}
+
+mark.highlight {
+  background-color: yellow;
+  color: black;
+}
+
+a img {
+  width: 40px;
+}
+
+a img:hover {
+  padding-bottom: 5px;
+  border-bottom: 3px solid #000e1d;
+  transition: 0.1s ease-in;
+}
+
+a img:not(:hover) {
+  transition: 0.1s ease-in;
+}
+
+.logotipe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.logotitle {
+  font-size: 36px;
+  font-family: "Merriweather", serif;
+  color: #000e1d;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  border-bottom: 2.5px solid #000e1d;
+  padding: 10px;
+  font-size: 16px;
+}
+
+main {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: start;
+ max-width: 100vw;
+ margin: 20px 0 20px;
+}
+
+#sectmain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#top-info {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 150px;
+}
+
+.aside-top-info {
+  width: 17%;
+  height: 200%;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  gap: 0;
+  background: url(images/abstract.jpg);
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+}
+
+.top-img-info {
+  width: 100%;
+  height: 20%;
+  background: url(images/abstract.jpg);
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+}
+
+.feed-id {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.feed-id h2 {
+  font-size: 18px;
+}
+
+.feed-id img {
+  width: 60px;
+  margin-top: -35px;
+}
+
+.line-info {
+  width: 100%;
+  height: 1.5px;
+  background-color: #000e1d;
+}
+
+.div-text-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 0;
+  width: 100%;
+}
+
+.div-text-info a {
+  text-decoration: underline;
+  color: #000e1d;
+}
+
+.div-text-info a:hover {
+  transform: scale(1.2);
+  padding-left: 7px;
+  color: #000e1d;
+  transition: 0.15s ease;
+}
+
+.div-text-info a:not(:hover) {
+  transition: 0.1s ease;
+}
+
+.div-text-info h3 {
+  font-family: 'Cabin', sans-serif;
+}
+
+.div-text-info h4 {
+  font-family: 'Cabin', sans-serif;
+  font-size: 14px;
+  width: 100%;
+}
+
+.div-adition {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 7px 10px 0 10px;
+}
+
+.div-adition img {
+  width: 32px;
+  height: 32px;
+  padding: 5px;
+}
+
+.div-adition img:hover {
+  background-color: #E5E5E5;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.bottom-div-info {
+  width: 100%;
+  height: 22%;
+}
+
+.title-news {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0;
+  padding-left: 18px;
+}
+
+.news-info-h1 {
+  font-family: "Merriweather", serif;
+  font-size: 24px;
+}
+
+.news-info-h2 {
+  font-size: 16px;
+  color: #7c7b7b;
+}
+
+.div-btn-news {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 10px;
+  gap: 5px;
+}
+
+.div-btn-news:hover {
+  background-color: #E5E5E5;
+  cursor: pointer;
+}
+
+.div-btn-news h5 {
+  font-family: 'Merriweather', sans-serif;
+  font-size: 18px;
+}
+
+.div-btn-news h6 {
+  font-family: 'Cabin', sans-serif;
+  font-size: 12px;
+  color: #3c3c3c;
+}
+
+.conect-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 20%;
+  padding: 0 10px 0 10px;
+  background-color: #E5E5E5;
+}
+
+.conect-info img {
+  width: 30px;
+}
+
+#total-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+#postate {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50vw;
+  height: 140px;
+  border-radius: 20px;
+}
+
+.publicate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.publicate img {
+  width: 34px;
+}
+
+.obj-img-publi:hover {
+  border-bottom: 3px solid #000e1d;
+  transition: 0.1s ease-in-out;
+  padding-bottom: 2px;
+}
+
+.obj-img-publi:not(:hover) {
+  border: none;
+  transition: 0.1s ease-in-out;
+}
+
+.text-post {
+  background-color: #b8b8b85c;
+  border: 2px solid #000e1d;
+  border-radius: 30px;
+  height: 50%;
+  width: 80%;
+  height: 85%;
+  padding: 15px;
+}
+
+.divisore {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.divide {
+  width: 47vw;
+  height: 3px;
+  background-color: #000e1d;
+  border-radius: 5px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#content {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: auto    ;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.top-publi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin: 1.5%;
+    gap: 0;
+}
+
+.top-publi img {
+    width: 85px;
+}
+
+h2 {
+    font-family: "Cabin", sans-serif;
+    font-size: 50px;
+}
+
+.profile-post {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h4 {
+    font-family: "Cabin", sans-serif;
+    font-size: 20px;
+}
+
+.main-publi {
+  background-image: url("images/GithubPublication.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  outline: 3px solid #fff;
+  outline-offset: -7px;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 50vw;
+  height: 250px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 25px;
+  border: 4px solid #000e1d;
+  gap: 10px;
+  overflow: hidden;
+}
+
+aside img {
+  width: 60px;
+}
+
+aside div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+aside h4 {
+  text-align: justify;
+  max-width: 90%;
+}
+
+.chart-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    width: 90% !important;
+    height: 90% !important;
+}

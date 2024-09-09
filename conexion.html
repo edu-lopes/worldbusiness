@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorldBusiness</title>
+    <link rel="stylesheet" href="conect.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+    </style>
+    <link rel="shortcut icon" href="images/globe.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logotipe">
+                <h1 class="logotitle">WorldBsn</h1>
+                <img style="width: 40px;" src="images/globe.png" alt="logotipo">
+                <input type="text" class="search-input" placeholder="Search">
+            </div>
+            <a href="web.html"><img src="images/casa.png" alt="home"></a>
+            <a href="conexion.html"><img src="images/desenvolvimento-pessoal.png" alt="web"></a>
+            <a href="work.html"><img src="images/bolsa.png" alt="bag"></a>
+            <a href="chat.html"><img src="images/comente (1).png" alt="chat"></a>
+            <div class="profile-container">
+                <a class="profile-icon" href=""><img src="images/perfil.png" alt="perfil"></a>
+                <div class="dropdown-menu">
+                    <a href="">Profile</a><a href="">Settings</a><a href="">Logout</a>
+                </div>
+            </div>
+            <a href="flowMix.html"><img src="images/cubos-de-acucar.png" alt="more"></a>
+        </nav>
+    </header>
+    <main>
+        <div class="title">
+            <h1>Your interaction</h1>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sed, quae accusamus nihil cupiditate aspernatur veniam illum earum.</h2>
+        </div>
+        <section id="info-int">
+            <div class="div-int">
+                <h4>Last Month</h4>
+                <div class="day">1</div>
+                <div class="day">2</div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day">5</div>
+                <div class="day">6</div>
+                <div class="day">7</div>
+                <div class="day">8</div>
+                <div class="day">9</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>
+                <div class="day">31</div>
+            </div>
+            <div class="div-int">
+                <canvas id="myChart"></canvas>
+            </div>
+            <div class="div-int">
+                <div class="two-int" style="outline: none; gap: 5px;">
+                    <h1>Total: <span>172</span> hours</h1>
+                    <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum ullam repudiandae et expedita?</h2>
+                </div>
+                <div class="two-int">
+                    <div><img src="images/github-white.png" alt="github"></div>
+                    <div><img src="images/apple-white.png" alt="apple"></div>
+                    <div><img src="images/t-mobile.png" style="width: 40%;" alt="airbnb"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var meuGraficoPizza = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['Browsing', 'Sharing', 'Talking', 'Interacting', 'Investing'],
+                datasets: [{
+                    label: 'Amount of hours',
+                    data: [75, 15, 25, 20, 38],
+                    backgroundColor: [
+                        'rgb(0, 11, 22)',
+                        'rgb(46, 38, 119)',
+                        'rgba(25, 45, 65, 0.729)',
+                        'rgba(0,120,144,1)  ',
+                        'rgb(255, 255, 255)'
+                    ],
+                    borderColor: [
+                        'rgb(0, 0, 0)'
+                    ],
+                    borderWidth: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'left',
+                        labels: {
+                            font: {
+                                size: 18,
+                                weight: 'bold',
+                                family: 'Cabin',
+                                style: 'normal',
+                            },
+                            color: 'white'
+                        }
+                    },
+                    tooltip: {
+                        enabled: true
+                    },
+                    datalabels: {
+                        formatter: (value, context) => {
+                            let sum = context.chart._metasets[0].total;
+                            let percentage = (value / sum * 100).toFixed(2) + "%";
+                            return percentage;
+                        },
+                        color: (context) => {
+                            return [0, 1, 2, 3].includes(context.dataIndex) ? '#fff' : '#000';
+                        },
+                        anchor: 'end',
+                        align: 'start',
+                        offset: 10,
+                        font: {
+                            size: 16,
+                            weight: 'bold',
+                            family: 'Cabin',
+                            style: 'bold'
+                        }
+                    }
+                }
+            },
+            plugins: [ChartDataLabels]
+        });
+    });
+</script>

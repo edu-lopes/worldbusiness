@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorldBusiness</title>
+    <link rel="stylesheet" href="work.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+    </style>
+    <link rel="shortcut icon" href="images/globe.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logotipe">
+                <h1 class="logotitle">WorldBsn</h1>
+                <img style="width: 40px;" src="images/globe.png" alt="logotipo">
+                <input type="text" class="search-input" placeholder="Position, Competence or Company">
+            </div>
+            <a href="web.html"><img src="images/casa.png" alt="home"></a>
+            <a href="conexion.html"><img src="images/desenvolvimento-pessoal.png" alt="web"></a>
+            <a href="work.html"><img src="images/bolsa.png" alt="bag"></a>
+            <a href="chat.html"><img src="images/comente (1).png" alt="chat"></a>
+            <div class="profile-container">
+                <a class="profile-icon" href=""><img src="images/perfil.png" alt="perfil"></a>
+                <div class="dropdown-menu">
+                    <a href="">Profile</a><a href="">Settings</a><a href="">Logout</a>
+                </div>
+            </div>
+            <a href="flowMix.html"><img src="images/cubos-de-acucar.png" alt="more"></a>
+        </nav>
+    </header>
+    <main>
+        <section id="sectmain">
+            <div id="top-info">
+                <aside class="aside-top-info" style="height: 180%; gap: 16px; padding-left: 10px;">
+                    <section class="section-aside">
+                        <div class="div-filters-links">
+                            <img src="images/salvar.png" alt="save">
+                            <h3>My vacancies</h3>
+                        </div>
+                        <div class="div-filters-links">
+                            <img src="images/filtro.png" alt="filter">
+                            <h3>Preferences</h3>
+                        </div>
+                        <div class="div-filters-links">
+                            <img src="images/check.png" alt="save">
+                            <h3>Assessment</h3>
+                        </div>
+                        <div class="div-filters-links" style="gap: 5px;">
+                            <img src="images/grafico-estatistico.png" alt="graph" style="width: 36px;">
+                            <h3>Expert guidance</h3>
+                        </div>
+                    </section>
+                    <button class="news-links">Advertise as a Start-Up</button>
+                </aside>
+                <section id="postate">
+                    <div class="title-postate">
+                        <h1>Search for a Freelance, Job or association</h1>
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit corrupti.</h2>
+                    </div>
+                    <div class="search-postate">
+                        <div style="display: flex; flex-direction: column; gap: 5px;">
+                            <h3>Position</h3>
+                            <input class="input-postate" type="text" placeholder="Job">
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 5px;">
+                            <h3>Country</h3>
+                            <input class="input-postate" type="text" placeholder="Place">
+                        </div>
+                        <div>
+                            <button class="search-btn">Search</button>
+                        </div>
+                    </div>
+                    <div class="top-job">
+                        <h3>Technology</h3>
+                        <div class="line"></div>
+                    </div>
+                    <article id="cargos" style="margin-top: 2%;">
+                        <div class="job">
+                            <a class="link-job" href="">
+                                <h1>Lorem</h1>
+                                <h2>Lolorem</h2>
+                                <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi ut minima nisi natus
+                                    earum.</h4>
+                            </a>
+                            <div class="bottom-job">
+                                <a class="link-img-job" href="">
+                                    <img class="img-div-job" src="images/seta-direita.png" alt="seta">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info-job">
+                            <div class="name-corporate">
+                                <img src="images/elefante.png" alt="logo">
+                                <h1>Elephant GPS</h1>
+                            </div>
+                            <div class="descript-corp">
+                                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident officia
+                                    excepturi sapiente rem adipisci.</h2>
+                            </div>
+                            <div class="theme">
+                                <h2>
+                                    According to the theme?
+                                </h2>
+                                <div class="btn-theme">
+                                    <button class="btn-color">Agree</button>
+                                    <button class="btn-color">Disagree</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="cargos" style="margin-top: 2%;">
+                        <div class="job">
+                            <a class="link-job" href="">
+                                <h1>Lorem</h1>
+                                <h2>Lolorem</h2>
+                                <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi ut minima nisi natus
+                                    earum.</h4>
+                            </a>
+                            <div class="bottom-job">
+                                <a class="link-img-job" href="">
+                                    <img class="img-div-job" src="images/seta-direita.png" alt="seta">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info-job">
+                            <div class="name-corporate">
+                                <img src="images/gato.png" alt="logo">
+                                <h1>CamAlarmTech (CAT)</h1>
+                            </div>
+                            <div class="descript-corp">
+                                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident officia
+                                    excepturi sapiente rem adipisci.</h2>
+                            </div>
+                            <div class="theme">
+                                <h2>
+                                    According to the theme?
+                                </h2>
+                                <div class="btn-theme">
+                                    <button class="btn-color">Agree</button>
+                                    <button class="btn-color">Disagree</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="cargos" style="margin-top: 2%;">
+                        <div class="job">
+                            <a class="link-job" href="">
+                                <h1>Lorem</h1>
+                                <h2>Lolorem</h2>
+                                <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi ut minima nisi natus
+                                    earum.</h4>
+                            </a>
+                            <div class="bottom-job">
+                                <a class="link-img-job" href="">
+                                    <img class="img-div-job" src="images/seta-direita.png" alt="seta">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info-job">
+                            <div class="name-corporate" style="margin-bottom: 5px;">
+                                <img src="images/atomo.png" alt="logo" style="width: 40px;">
+                                <h1>Science Today</h1>
+                            </div>
+                            <div class="descript-corp">
+                                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident officia
+                                    excepturi sapiente rem adipisci.</h2>
+                            </div>
+                            <div class="theme">
+                                <h2>
+                                    According to the theme?
+                                </h2>
+                                <div class="btn-theme">
+                                    <button class="btn-color">Agree</button>
+                                    <button class="btn-color">Disagree</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="cargos" style="margin-top: 2%;">
+                        <div class="job">
+                            <a class="link-job" href="">
+                                <h1>Lorem</h1>
+                                <h2>Lolorem</h2>
+                                <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi ut minima nisi natus
+                                    earum.</h4>
+                            </a>
+                            <div class="bottom-job">
+                                <a class="link-img-job" href="">
+                                    <img class="img-div-job" src="images/seta-direita.png" alt="seta">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info-job">
+                            <div class="name-corporate" style="margin-bottom: 5px;">
+                                <img src="images/ciclo-da-agua.png" alt="logo" style="width: 45px;">
+                                <h1>Water Recicle</h1>
+                            </div>
+                            <div class="descript-corp">
+                                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident officia
+                                    excepturi sapiente rem adipisci.</h2>
+                            </div>
+                            <div class="theme">
+                                <h2>
+                                    According to the theme?
+                                </h2>
+                                <div class="btn-theme">
+                                    <button class="btn-color">Agree</button>
+                                    <button class="btn-color">Disagree</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="cargos" style="margin-top: 2%;">
+                        <div class="job">
+                            <a class="link-job" href="">
+                                <h1>Lorem</h1>
+                                <h2>Lolorem</h2>
+                                <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi ut minima nisi natus
+                                    earum.</h4>
+                            </a>
+                            <div class="bottom-job">
+                                <a class="link-img-job" href="">
+                                    <img class="img-div-job" src="images/seta-direita.png" alt="seta">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info-job">
+                            <div class="name-corporate">
+                                <img src="images/controle-de-video-game.png" alt="logo">
+                                <h1>Studio Controler</h1>
+                            </div>
+                            <div class="descript-corp">
+                                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident officia
+                                    excepturi sapiente rem adipisci.</h2>
+                            </div>
+                            <div class="theme">
+                                <h2>
+                                    According to the theme?
+                                </h2>
+                                <div class="btn-theme">
+                                    <button class="btn-color">Agree</button>
+                                    <button class="btn-color">Disagree</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <aside class="aside-top-info"
+                    style="height: 100%; width: auto; align-items: center; background:none; justify-content: center; overflow: visible; margin-top: 12px;">
+                    <div class="grid-words">
+                        <div class="grid-words-div">About</div>
+                        <div class="grid-words-div">Acessibilty</div>
+                        <div class="grid-words-div">Help Center</div>
+                        <div class="grid-words-div">Terms and Privacy</div>
+                        <div class="grid-words-div">Ad Preferences</div>
+                        <div class="grid-words-div">Publicity</div>
+                        <div class="grid-words-div">Download the WorldBsn App</div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+</body>
